@@ -1,7 +1,7 @@
 #include phase1.h
 
 // Struct for Process
-struct Process {
+typedef struct Process {
 	char[MAXNAME];
 	int PID;
 	int parent_PID;
@@ -11,7 +11,7 @@ struct Process {
 } Process;
 
 // Struct for Queues
-struct RunQueue {
+typedef struct RunQueue {
 	Process this_process;
 	Process next_process;
 } RunQueue;
