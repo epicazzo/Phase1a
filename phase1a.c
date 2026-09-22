@@ -5,7 +5,7 @@
 
 Process process_table[MAXPROC];
 RunQueue run_queues[6] = NULL;
-
+Process *current;
 
 
 void phase1_init() {
@@ -25,7 +25,7 @@ void quit_phase_1a(int status, int switchToPid) {
 }
 
 int getpid() {
-
+	return *current->PID;
 }
 
 void dumpProcesses() {
