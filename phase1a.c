@@ -4,7 +4,7 @@
 
 
 Process process_table[MAXPROC];
-RunQueue run_queues[6];
+RunQueue run_queues[6] = NULL;
 
 
 

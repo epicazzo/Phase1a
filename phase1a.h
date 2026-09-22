@@ -8,6 +8,12 @@ typedef struct Process {
 	int priority;
 	int runnable_status;
 	int quit_state;
+
+	struct process *run_queue_next;
+	
+	struct Process *parent;	
+	struct Process *first_child;
+	struct Process *next_sibling;
 } Process;
 
 // Struct for Queues
